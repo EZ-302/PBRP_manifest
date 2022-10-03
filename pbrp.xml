@@ -30,12 +30,16 @@
     <project path="external/bouncycastle" name="external_bouncycastle" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="PitchBlackRecoveryProject" revision="android-11.0" />
 
+    <!-- Include phh's treble repo for lptools support -->
+    <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
+
     <!-- General -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="PitchBlackRecoveryProject" revision="android-11.0"/>
 
     <!-- System -->
     <project path="system/core" name="system_core" remote="PitchBlackRecoveryProject" revision="android-11.0" />
     <project path="system/libhidl" name="android_system_libhidl" remote="PitchBlackRecoveryProject" revision="android-11.0" />
+	<project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" />
 
     <!-- Vendor -->
@@ -43,5 +47,12 @@
     <project path="vendor/utils" name="vendor_utils" remote="PitchBlackRecoveryProject" revision="pb" >
         <linkfile src="pb_build.sh" dest="vendor/pb/pb_build.sh" />
     </project>
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-11" />
+    <project name="android_device_qcom_twrp-common" path="device/qcom/twrp-common" remote="TeamWin" revision="android-11" />
+    <project name="android_hardware_qcom_bootctrl" path="hardware/qcom-caf/bootctrl" remote="LineageOS" revision="lineage-18.1-caf" />
+    <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="LineageOS" revision="lineage-18.1" />
+    <project name="android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="LineageOS" revision="lineage-18.1" />
 
 </manifest>
